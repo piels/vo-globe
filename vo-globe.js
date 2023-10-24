@@ -46,23 +46,62 @@ var data = {
 };
 
 
+/*
+find outside edge
+  find northmost point
+  find next point clockwise
+  loop until next point is the north point
+
+fill in the middle
+
+add outside lines
+
+
+https://en.wikipedia.org/wiki/Delaunay_triangulation
+
+*/
+
+
+function bearing(from,to) {
 
 
 
-function Globe(name) {
-	this.name = name;
 }
 
-function Place(name,lat,lon) {
-	this.name = name;
-	this.coords = { 
-		lat : lat,
-		lon : lon
-	};
+
+
+
+class Globe {
+	constructor(name) {
+		this.name = name;
+	}
 }
 
-function Triangle() {
+class Place {
+	constructor(name, lat, lon) {
+		this.name = name;
+		this.coords = {
+			lat: lat,
+			lon: lon
+		};
+	}
 
+	static bearing(to) {
+
+
+	}
+
+	static gcdistance(to) {
+
+	}
+}
+
+class Triangle {
+	constructor(a, b, c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
 }
 
 
